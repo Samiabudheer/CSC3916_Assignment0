@@ -8,7 +8,17 @@ module.exports = async (phrase) => {
         }
     })
 
-
+// return JSON.stringify(results.data);
+    let customObjec = {
+        data: results.data,
+            status:results.status,
+            statusText: results.statusText,
+            requestHeader: results.config.headers
+        
+    }
+    
+    return customeObject;
+                
     //
     //TODO: return a formattedObj
     var formattedObj = {
